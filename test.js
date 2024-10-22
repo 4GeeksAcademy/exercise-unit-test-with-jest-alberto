@@ -31,3 +31,11 @@ test("Un Yen son 0,0051 Libras", function(){
 
     expect(fromYenToPound(194.44)).toBe(0.9916440000000001);
 })
+
+test("Un Dolar son 151 Yenes", function(){
+    const { fromDollarToYen } = require('./app.js');
+    const yens = fromDollarToYen(1);
+    const expected = 1 * 151;
+
+    expect(fromDollarToYen(1)).toBe(151);
+})
